@@ -238,8 +238,11 @@ val.zip: /tmp/val/
    Para el almacenamiento de las imágenes se requiere un espacio de 2 GB.
   
 * How will the score or operationalized web service(s) (RRS and/or BES) be consumed in the business workflow of the customer? If applicable, write down pseudo code for the APIs of the web service calls.
+
+![Flujo_Get_Post](https://user-images.githubusercontent.com/73256719/203880596-1eff0bef-bcac-4b05-9c7d-0037013f7a76.png)
+
   * How will the customer use the model results to make decisions
-  
+    
   El modelo será utilizado para generar de forma rápida el diagnóstico automatizado de una patología gastrointestinal, mediante la clasificación que realice de una imágen de endoscopía digestiva. Este diagnóstico será utilizado para  ofrecer tratamientos oportunos y acordes al diagnóstico generado, contribuyendo a una atención  más rápida a los pacientes que presenten alguna de estas patologías y disminuyendo costos en su atención.
   
     
