@@ -241,7 +241,7 @@ val.zip: /tmp/val/
 
 ![Flujo_Get_Post](https://user-images.githubusercontent.com/73256719/203880596-1eff0bef-bcac-4b05-9c7d-0037013f7a76.png)
 
-El cliente desde su computador accede a la aplicación web (servidor programa UVICORN), la cual cuenta con una opción de seleccionar una imagen y un botón de procesar que a través del Microframe work de FastAPI invocando el método POST quien a su vez ejecuta el modelo pasándole la imagen para que realice el preprocesamiento y clasificación de la imagen retornando con el método GET de FastAPI el diagnostico de la imagen recibida.
+De acuerdo a la anterior imágen, el cliente desde su computador accede a la aplicación web (servidor programa UVICORN), la cual cuenta con una opción de seleccionar una imagen y un botón de procesar que a través del Microframe work de FastAPI invocando el método POST quien a su vez ejecuta el modelo pasándole la imagen para que realice el preprocesamiento y clasificación de la imagen retornando con el método GET de FastAPI el diagnostico de la imagen recibida.
 
 
   * How will the customer use the model results to make decisions
