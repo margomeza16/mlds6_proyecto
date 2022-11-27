@@ -46,6 +46,6 @@ def preproceso(ruta_orig,batch_size):
                                                                 fill_mode='constant')
 
   	#Se aplica data augmentation sobre el conjunto de imágenes de entrenamiento
-  	train_gen = train_datagen.flow(X_train_prepro, Y_train, batch_size=batch_size)
+  	train_gen = train_datagen.flow(X_train_prep, Y_train, batch_size=batch_size)
 
   	return train_gen,X_train_prep,X_val_prep,X_test_prep,Y_train,Y_test,Y_val
