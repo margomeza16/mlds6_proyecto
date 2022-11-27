@@ -31,9 +31,9 @@ val.zip: Archivo zip descargado de la página de Kaggle, desde la dirección ind
 ## Processed Data
 | Processed Dataset Name | Input Dataset(s)   | Data Processing Tools/Scripts | Link to Report |
 | ---:| ---: | ---: | ---: | 
-| train.zip | [Dataset1](https://drive.google.com/file/d/1BwSoPrJzTLndqMjBMThOWr-qQe7FbOyU/view?usp=share_link)| [preproc_img.py](link/to/python/script/file/in/Code) | [Processed Dataset 1 Report](link/to/report1)|
-| test.zip | [Dataset2]([link/to/dataset2/report](https://drive.google.com/file/d/1AQWlyBOm9EG6tQOSk5HNbpHkpSCSVr0Y/view?usp=share_link)) |[preproc_img.py](link/to/R/script/file/in/Code) | [Processed Dataset 2 Report](link/to/report2)|
-| val.zip | [Dataset3]([link/to/dataset2/report](https://drive.google.com/file/d/1TBS_el84d3lEgrNTbXezzLt6T1SYk0mV/view?usp=share_link)) |[preproc_img.py](link/to/R/script/file/in/Code) | [Processed Dataset 3 Report](link/to/report2)|
+| train.zip | [Dataset1](https://drive.google.com/file/d/1BwSoPrJzTLndqMjBMThOWr-qQe7FbOyU/view?usp=share_link)| [preproc_img.py](https://github.com/margomeza16/mlds6_proyecto/blob/master/scripts/preprocessing/prepoc_img.py) | [Processed Dataset 1 Report](link/to/report1)|
+| test.zip | [Dataset2]([link/to/dataset2/report](https://drive.google.com/file/d/1AQWlyBOm9EG6tQOSk5HNbpHkpSCSVr0Y/view?usp=share_link)) |[preproc_img.py](https://github.com/margomeza16/mlds6_proyecto/blob/master/scripts/preprocessing/prepoc_img.py) | [Processed Dataset 2 Report](link/to/report2)|
+| val.zip | [Dataset3]([link/to/dataset2/report](https://drive.google.com/file/d/1TBS_el84d3lEgrNTbXezzLt6T1SYk0mV/view?usp=share_link)) |[preproc_img.py](https://github.com/margomeza16/mlds6_proyecto/blob/master/scripts/preprocessing/prepoc_img.py) | [Processed Dataset 3 Report](link/to/report2)|
 * Processed Data1 summary. <Provide brief summary of the processed data, such as why you want to process data in this way. More detailed information about the processed data should be in the Processed Data1 Report.>
 * Processed Data2 summary. <Provide brief summary of the processed data, such as why you want to process data in this way. More detailed information about the processed data should be in the Processed Data2 Report.> 
 * * Processed Data3 summary. <Provide brief summary of the processed data, such as why you want to process data in this way. More detailed information about the processed data should be in the Processed Data3 Report.> 
