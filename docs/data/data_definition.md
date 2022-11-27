@@ -44,7 +44,7 @@ A este arreglo de imágenes de numpy, se aplica el procesamiento de la ResNet50V
 
 Finalmente y debido a que la red convolucional requiere gran cantidad de imágenes, sobre el procesamiento anterior se aplica data augmentation, para obtener más imagenes de entrenamiento transformando el conjunto original (cambios en traslación, rotación, intensidad, entre otros).
 
-Por último, a las etiquetas de las 4 clases de diagnóstico: ["0_normal/", "1_ulcerative_colitis/", "2_polyps/", "3_esophagitis/"], se les aplica códificación one-hot.
+Por último, a las etiquetas de las 4 clases de diagnóstico: ["0_normal/", "1_ulcerative_colitis/", "2_polyps/", "3_esophagitis/"], se les aplica códificación one-hot, para tener una representación binaria por cada clase de salida.
 
 
 * Processed Data2 summary. <Provide brief summary of the processed data, such as why you want to process data in this way. More detailed information about the processed data should be in the Processed Data2 Report.> 
@@ -55,7 +55,7 @@ Se cargan en arreglo de numpy y mediante la función tf.keras.preprocessing.imag
 
 A este arreglo de imágenes de numpy, se aplica el procesamiento de la ResNet50V2, tf.keras.applications.resnet_v2.preprocess_input, que es requerido para escalar los pixeles de las imágenes entre -1 y 1.
 
-Por último, a las etiquetas de las 4 clases de diagnóstico: ["0_normal/", "1_ulcerative_colitis/", "2_polyps/", "3_esophagitis/"], se les aplica códificación one-hot.
+Por último, a las etiquetas de las 4 clases de diagnóstico: ["0_normal/", "1_ulcerative_colitis/", "2_polyps/", "3_esophagitis/"], se les aplica códificación one-hot, para tener una representación binaria por cada clase de salida.
 
 * * Processed Data3 summary. <Provide brief summary of the processed data, such as why you want to process data in this way. More detailed information about the processed data should be in the Processed Data3 Report.> 
 
@@ -65,7 +65,7 @@ Se cargan en arreglo de numpy y mediante la función tf.keras.preprocessing.imag
 
 A este arreglo de imágenes de numpy, se aplica el procesamiento de la ResNet50V2, tf.keras.applications.resnet_v2.preprocess_input, que es requerido para escalar los pixeles de las imágenes entre -1 y 1.
 
-Por último, a las etiquetas de las 4 clases de diagnóstico: ["0_normal/", "1_ulcerative_colitis/", "2_polyps/", "3_esophagitis/"], se les aplica códificación one-hot.
+Por último, a las etiquetas de las 4 clases de diagnóstico: ["0_normal/", "1_ulcerative_colitis/", "2_polyps/", "3_esophagitis/"], se les aplica códificación one-hot, para tener una representación binaria por cada clase de salida.
 
 ## Feature Sets
 
