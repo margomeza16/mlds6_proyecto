@@ -38,9 +38,9 @@ val.zip: Archivo zip descargado de la página de Kaggle, desde la dirección ind
 
 train.zip: Al conjunto de imagenes de entrenamiento se aplicaron los siguientes preprocesamientos:
 
-Se cargan en arreglo de numpy y mediante la función tf.keras.preprocessing.image.load_img, se les cambia el tamaño a 224*224 pixeles con representación RGB. Esto se hace debido a que se utilizará la red convolucional preentrenada ResNet50V2 para la extracción de características.
+Se cargan en arreglo de numpy y mediante la función tf.keras.preprocessing.image.load_img, se les cambia el tamaño a 224*224 pixeles con representación RGB. Esto se hace debido a que se utilizará la red convolucional preentrenada ResNet50V2 para la extracción de características, la cual requiere que las imágenes de entrada tengan esa resolución.
 
-A este arreglo de imágenes de numpy se aplica el procesamiento de la ResNet50V2, tf.keras.applications.resnet_v2.preprocess_input, que es requerido para escalar los pixeles de las imágenes entre -1 y 1.
+A este arreglo de imágenes de numpy, se aplica el procesamiento de la ResNet50V2, tf.keras.applications.resnet_v2.preprocess_input, que es requerido para escalar los pixeles de las imágenes entre -1 y 1.
 
 Finalmente y debido a que la red convolucional requiere gran cantidad de imágenes, sobre el procesamiento anterior se aplica data augmentation, para obtener más imagenes de entrenamiento transformando el conjunto original (cambios en traslación, rotación, intensidad, entre otros).
 
@@ -48,7 +48,24 @@ Por último, a las etiquetas de las 4 clases de diagnóstico: ["0_normal/", "1_u
 
 
 * Processed Data2 summary. <Provide brief summary of the processed data, such as why you want to process data in this way. More detailed information about the processed data should be in the Processed Data2 Report.> 
+
+test.zip: Contiene el conjunto de imágenes de prueba, sobre las cuales se aplican los siguientes preprocesamientos:
+
+Se cargan en arreglo de numpy y mediante la función tf.keras.preprocessing.image.load_img, se les cambia el tamaño a 224*224 pixeles con representación RGB. Esto se hace debido a que se utilizará la red convolucional preentrenada ResNet50V2 para la extracción de características, la cual requiere que las imágenes de entrada tengan esa resolución.
+
+A este arreglo de imágenes de numpy, se aplica el procesamiento de la ResNet50V2, tf.keras.applications.resnet_v2.preprocess_input, que es requerido para escalar los pixeles de las imágenes entre -1 y 1.
+
+Por último, a las etiquetas de las 4 clases de diagnóstico: ["0_normal/", "1_ulcerative_colitis/", "2_polyps/", "3_esophagitis/"], se les aplica códificación one-hot.
+
 * * Processed Data3 summary. <Provide brief summary of the processed data, such as why you want to process data in this way. More detailed information about the processed data should be in the Processed Data3 Report.> 
+
+val.zip: Contiene el conjunto de imágenes de validación, sobre las cuales se aplican los siguientes preprocesamientos:
+
+Se cargan en arreglo de numpy y mediante la función tf.keras.preprocessing.image.load_img, se les cambia el tamaño a 224*224 pixeles con representación RGB. Esto se hace debido a que se utilizará la red convolucional preentrenada ResNet50V2 para la extracción de características, la cual requiere que las imágenes de entrada tengan esa resolución.
+
+A este arreglo de imágenes de numpy, se aplica el procesamiento de la ResNet50V2, tf.keras.applications.resnet_v2.preprocess_input, que es requerido para escalar los pixeles de las imágenes entre -1 y 1.
+
+Por último, a las etiquetas de las 4 clases de diagnóstico: ["0_normal/", "1_ulcerative_colitis/", "2_polyps/", "3_esophagitis/"], se les aplica códificación one-hot.
 
 ## Feature Sets
 
