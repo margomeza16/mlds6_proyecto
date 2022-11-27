@@ -31,9 +31,9 @@ val.zip: Archivo zip descargado de la página de Kaggle, desde la dirección ind
 ## Processed Data
 | Processed Dataset Name | Input Dataset(s)   | Data Processing Tools/Scripts | Link to Report |
 | ---:| ---: | ---: | ---: | 
-| train.zip | [Dataset1](https://drive.google.com/file/d/1BwSoPrJzTLndqMjBMThOWr-qQe7FbOyU/view?usp=share_link)| [preproc_img.py](https://github.com/margomeza16/mlds6_proyecto/blob/master/scripts/preprocessing/prepoc_img.py) | [Processed Dataset 1 Report](link/to/report1)|
-| test.zip | [Dataset2]([link/to/dataset2/report](https://drive.google.com/file/d/1AQWlyBOm9EG6tQOSk5HNbpHkpSCSVr0Y/view?usp=share_link)) |[preproc_img.py](https://github.com/margomeza16/mlds6_proyecto/blob/master/scripts/preprocessing/prepoc_img.py) | [Processed Dataset 2 Report](link/to/report2)|
-| val.zip | [Dataset3]([link/to/dataset2/report](https://drive.google.com/file/d/1TBS_el84d3lEgrNTbXezzLt6T1SYk0mV/view?usp=share_link)) |[preproc_img.py](https://github.com/margomeza16/mlds6_proyecto/blob/master/scripts/preprocessing/prepoc_img.py) | [Processed Dataset 3 Report](link/to/report2)|
+| train.zip | [Dataset1](https://drive.google.com/file/d/1BwSoPrJzTLndqMjBMThOWr-qQe7FbOyU/view?usp=share_link)| [preproc_img.py](https://github.com/margomeza16/mlds6_proyecto/blob/master/scripts/preprocessing/prepoc_img.py) | [Processed Dataset 1 Report](https://github.com/margomeza16/mlds6_proyecto/blob/master/docs/data/preproc_report.md)|
+| test.zip | [Dataset2]([link/to/dataset2/report](https://drive.google.com/file/d/1AQWlyBOm9EG6tQOSk5HNbpHkpSCSVr0Y/view?usp=share_link)) |[preproc_img.py](https://github.com/margomeza16/mlds6_proyecto/blob/master/scripts/preprocessing/prepoc_img.py) | [Processed Dataset 2 Report](https://github.com/margomeza16/mlds6_proyecto/blob/master/docs/data/preproc_report.md)|
+| val.zip | [Dataset3]([link/to/dataset2/report](https://drive.google.com/file/d/1TBS_el84d3lEgrNTbXezzLt6T1SYk0mV/view?usp=share_link)) |[preproc_img.py](https://github.com/margomeza16/mlds6_proyecto/blob/master/scripts/preprocessing/prepoc_img.py) | [Processed Dataset 3 Report](https://github.com/margomeza16/mlds6_proyecto/blob/master/docs/data/preproc_report.md)|
 * Processed Data1 summary. <Provide brief summary of the processed data, such as why you want to process data in this way. More detailed information about the processed data should be in the Processed Data1 Report.>
 
 train.zip: Al conjunto de imagenes de entrenamiento se aplicaron los siguientes preprocesamientos:
