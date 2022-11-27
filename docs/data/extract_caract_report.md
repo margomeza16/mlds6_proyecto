@@ -7,7 +7,7 @@ extractor = tf.keras.applications.ResNet50V2(weights='imagenet', include_top=Fal
                                             
 La extracción de características, consiste en la obtención de representaciones intermedias y las realiza de forma progresiva mediante las capas de convolución y de pooling conectadas de forma secuencial, hasta llegar a un nivel de abstracción suficiente, para que al adicionar capas densas de clasificación al final del modelo, se obtenga una predicción adecuada de la imágen. 
 
-Para nuestro caso, una vez construido y entrenado el modelo se construyó función para la extracción del vector de característiscas de 4 imágenes aleatorias del conjunto de test, para determinar su clasificación. Asi mismo se construyo función para obtener la similitud del coseno entre dos vectores de características de dos imágenes distintas.
+Para nuestro caso, una vez construido y entrenado el modelo se construyó función para la extracción del vector de característiscas de 4 imágenes aleatorias del conjunto de test, mediante la función predict del modelo, para determinar su clasificación. Asi mismo se construyo función para obtener la similitud del coseno entre dos vectores de características de dos imágenes distintas.
 
 ResNet50V2. Es una versión modificada de la red inicial ganadora del primer lugar en el concurso de clasificaci´on ILSVRX 2015, esta cuenta con un total de 152
 capas distribuidas con 50 bloques convolucionales, tiene aproximadamente 25.5 millones de parámetros dentro de su configuración. Esta utiliza una serie de de
