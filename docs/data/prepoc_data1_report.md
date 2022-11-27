@@ -20,6 +20,4 @@ train_datagen = tf.keras.preprocessing.image.ImageDataGenerator(rotation_range=1
                                                                 horizontal_flip=True,
                                                                 fill_mode='constant')
 
-4. One-hot. Sobre la variable y_train, que contiene las etiquetas de clasificación del diagnóstico de cada imagen de entrenamiento, se aplica codificación one-hot para obtener una representación binaria de cada clase de diagnóstico de salida. El siguiente es el código aplicado:
-
-Y_train = tf.keras.utils.to_categorical(y_train)
+4. One-hot. Sobre la variable y_train, que contiene las etiquetas de clasificación del diagnóstico de cada imagen de entrenamiento, se aplica codificación one-hot para obtener una representación binaria de cada clase de diagnóstico de salida. El siguiente es el código aplicado: Y_train = tf.keras.utils.to_categorical(y_train)
