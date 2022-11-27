@@ -18,15 +18,18 @@ _**For ease of modifying this report, placeholder links are included in this pag
 
 * Dataset1 summary. <Provide brief summary of the data, such as how to access the data. More detailed information should be in the Dataset1 Report.>
 
-train.zip: Archivo zip descargado de la página de Kaggle, desde la dirección indicada en el cuadro anterior. Contiene 3200 imágenes de endoscopías en formato JPG, con diferentes resoluciones, que van desde 720x576 hasta 1920x1072 píxeles, que corresponden al conjunto de entrenamiento, separadas en 4 carpetas según el diagnóstico del especialista, cada clase de diagnóstico contiene 800 imágenes. El archivo se encuentra en GoogleDrive y se puede acceder  a través del siguiente link: https://drive.google.com/file/d/1BwSoPrJzTLndqMjBMThOWr-qQe7FbOyU/view?usp=share_link.
+# train.zip:
+Archivo zip descargado de la página de Kaggle, desde la dirección indicada en el cuadro anterior. Contiene 3200 imágenes de endoscopías en formato JPG, con diferentes resoluciones, que van desde 720x576 hasta 1920x1072 píxeles, que corresponden al conjunto de entrenamiento, separadas en 4 carpetas según el diagnóstico del especialista, cada clase de diagnóstico contiene 800 imágenes. El archivo se encuentra en GoogleDrive y se puede acceder  a través del siguiente link: https://drive.google.com/file/d/1BwSoPrJzTLndqMjBMThOWr-qQe7FbOyU/view?usp=share_link.
 
 * Dataset2 summary. <Provide brief summary of the data, such as how to access the data. More detailed information should be in the Dataset2 Report.> 
 
-test.zip: Archivo zip descargado de la página de Kaggle, desde la dirección indicada en el cuadro anterior. Contiene 800 imágenes de endoscopías en formato JPG, con diferentes resoluciones, que van desde 720x576 hasta 1920x1072 píxeles, que corresponden al conjunto de pruebas, separadas en 4 carpetas según la clase de diagnóstico del especialista, cada clase de diagnóstico contiene 200 imágenes. El archivo se encuentra en GoogleDrive y se puede acceder  a través del siguiente link: https://drive.google.com/file/d/1AQWlyBOm9EG6tQOSk5HNbpHkpSCSVr0Y/view?usp=share_link.
+# test.zip:
+Archivo zip descargado de la página de Kaggle, desde la dirección indicada en el cuadro anterior. Contiene 800 imágenes de endoscopías en formato JPG, con diferentes resoluciones, que van desde 720x576 hasta 1920x1072 píxeles, que corresponden al conjunto de pruebas, separadas en 4 carpetas según la clase de diagnóstico del especialista, cada clase de diagnóstico contiene 200 imágenes. El archivo se encuentra en GoogleDrive y se puede acceder  a través del siguiente link: https://drive.google.com/file/d/1AQWlyBOm9EG6tQOSk5HNbpHkpSCSVr0Y/view?usp=share_link.
 
 * Dataset3 summary. <Provide brief summary of the data, such as how to access the data. More detailed information should be in the Dataset3 Report.> 
 
-val.zip: Archivo zip descargado de la página de Kaggle, desde la dirección indicada en el cuadro anterior. Contiene 2000 imágenes de endoscopías en formato JPG, con diferentes resoluciones, que van desde 720x576 hasta 1920x1072 píxeles, que corresponden al conjunto de pruebas, separadas en 4 carpetas según la clase de diagnóstico del especialista, cada clase de diagnóstico contiene 500 imágenes. El archivo se encuentra en GoogleDrive y se puede acceder  a través del siguiente link: https://drive.google.com/file/d/1TBS_el84d3lEgrNTbXezzLt6T1SYk0mV/view?usp=share_link.
+# val.zip:
+Archivo zip descargado de la página de Kaggle, desde la dirección indicada en el cuadro anterior. Contiene 2000 imágenes de endoscopías en formato JPG, con diferentes resoluciones, que van desde 720x576 hasta 1920x1072 píxeles, que corresponden al conjunto de pruebas, separadas en 4 carpetas según la clase de diagnóstico del especialista, cada clase de diagnóstico contiene 500 imágenes. El archivo se encuentra en GoogleDrive y se puede acceder  a través del siguiente link: https://drive.google.com/file/d/1TBS_el84d3lEgrNTbXezzLt6T1SYk0mV/view?usp=share_link.
 
 ## Processed Data
 | Processed Dataset Name | Input Dataset(s)   | Data Processing Tools/Scripts | Link to Report |
@@ -36,7 +39,9 @@ val.zip: Archivo zip descargado de la página de Kaggle, desde la dirección ind
 | val.zip | [Dataset3]([link/to/dataset2/report](https://drive.google.com/file/d/1TBS_el84d3lEgrNTbXezzLt6T1SYk0mV/view?usp=share_link)) |[preproc_img.py](https://github.com/margomeza16/mlds6_proyecto/blob/master/scripts/preprocessing/prepoc_img.py) | [Processed Dataset 3 Report](https://github.com/margomeza16/mlds6_proyecto/blob/master/docs/data/preproc_report.md)|
 * Processed Data1 summary. <Provide brief summary of the processed data, such as why you want to process data in this way. More detailed information about the processed data should be in the Processed Data1 Report.>
 
-train.zip: Al conjunto de imagenes de entrenamiento se aplicaron los siguientes preprocesamientos:
+# train.zip:
+
+Al conjunto de imagenes de entrenamiento se aplicaron los siguientes preprocesamientos:
 
 Se cargan en arreglo de numpy y mediante la función tf.keras.preprocessing.image.load_img, se les cambia el tamaño a 224*224 pixeles con representación RGB. Esto se hace debido a que se utilizará la red convolucional preentrenada ResNet50V2 para la extracción de características, la cual requiere que las imágenes de entrada tengan esa resolución.
 
@@ -49,7 +54,8 @@ Por último, a las etiquetas de las 4 clases de diagnóstico: ["0_normal/", "1_u
 
 * Processed Data2 summary. <Provide brief summary of the processed data, such as why you want to process data in this way. More detailed information about the processed data should be in the Processed Data2 Report.> 
 
-test.zip: Contiene el conjunto de imágenes de prueba, sobre las cuales se aplican los siguientes preprocesamientos:
+# test.zip:
+Contiene el conjunto de imágenes de prueba, sobre las cuales se aplican los siguientes preprocesamientos:
 
 Se cargan en arreglo de numpy y mediante la función tf.keras.preprocessing.image.load_img, se les cambia el tamaño a 224*224 pixeles con representación RGB. Esto se hace debido a que se utilizará la red convolucional preentrenada ResNet50V2 para la extracción de características, la cual requiere que las imágenes de entrada tengan esa resolución.
 
@@ -59,7 +65,8 @@ Por último, a las etiquetas de las 4 clases de diagnóstico: ["0_normal/", "1_u
 
 * * Processed Data3 summary. <Provide brief summary of the processed data, such as why you want to process data in this way. More detailed information about the processed data should be in the Processed Data3 Report.> 
 
-val.zip: Contiene el conjunto de imágenes de validación, sobre las cuales se aplican los siguientes preprocesamientos:
+# val.zip:
+Contiene el conjunto de imágenes de validación, sobre las cuales se aplican los siguientes preprocesamientos:
 
 Se cargan en arreglo de numpy y mediante la función tf.keras.preprocessing.image.load_img, se les cambia el tamaño a 224*224 pixeles con representación RGB. Esto se hace debido a que se utilizará la red convolucional preentrenada ResNet50V2 para la extracción de características, la cual requiere que las imágenes de entrada tengan esa resolución.
 
