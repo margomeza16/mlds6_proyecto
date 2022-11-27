@@ -4,7 +4,7 @@ import tensorflow as tf
 import pandas as pd
 def preproceso(ruta_orig,batch_size):
 	#El parámetro ruta_orig corresponde a la ruta donde se encuentran descargadas las imagenes a procesar. Debe terminar con el caracter "/"
-	#
+	#El batch_size corresponde al número de imagenes a generar en cada iteración de data augmentation.
 	all_images = []
 	labels = []
 	for i, val in enumerate(["0_normal/", "1_ulcerative_colitis/", "2_polyps/", "3_esophagitis/"]):
