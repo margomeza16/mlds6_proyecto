@@ -70,7 +70,7 @@ Contiene el conjunto de imágenes de validación, sobre las cuales se aplican lo
 
 Se cargan en arreglo de numpy y mediante la función tf.keras.preprocessing.image.load_img, se les cambia el tamaño a 224*224 pixeles con representación RGB. Esto se hace debido a que se utilizará la red convolucional preentrenada ResNet50V2 para la extracción de características, la cual requiere que las imágenes de entrada tengan esa resolución.
 
-A este arreglo de imágenes de numpy, se aplica el procesamiento de la ResNet50V2, tf.keras.applications.resnet_v2.preprocess_input, que es requerido para escalar los pixeles de las imágenes entre -1 y 1.
+A este arreglo de imágenes de numpy, se aplica el procesamiento de la red convolucional ResNet50V2, tf.keras.applications.resnet_v2.preprocess_input, que es requerido para escalar los pixeles de las imágenes entre -1 y 1.
 
 Por último, a las etiquetas de las 4 clases de diagnóstico: ["0_normal/", "1_ulcerative_colitis/", "2_polyps/", "3_esophagitis/"], se les aplica códificación one-hot, para tener una representación binaria por cada clase de salida.
 
@@ -82,4 +82,6 @@ Por último, a las etiquetas de las 4 clases de diagnóstico: ["0_normal/", "1_u
 | Feature Set 2 | [Processed Dataset2](link/to/dataset2/report) |[SQL_Script2.sql](link/to/sql/script/file/in/Code) | [Feature Set2 Report](link/to/report2)|
 
 * Feature Set1 summary. <Provide detailed description of the feature set, such as the meaning of each feature. More detailed information about the feature set should be in the Feature Set1 Report.>
+
+Teniendo en cuenta que se va a implementar un modelo de Fine Tunnig, para la extracción de características del conjunto de imágenes de entrenamiento, se utiliza la red convolucional preeentrenada ResNet50V2, sin las capas densas del final.
 * Feature Set2 summary. <Provide detailed description of the feature set, such as the meaning of each feature. More detailed information about the feature set should be in the Feature Set2 Report.> 
