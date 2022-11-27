@@ -19,6 +19,10 @@ train_datagen = tf.keras.preprocessing.image.ImageDataGenerator(rotation_range=1
                                                                 zoom_range=0.2,
                                                                 horizontal_flip=True,
                                                                 fill_mode='constant')
+ 
+ Las imágenes generadas para el entrenamiento mediante las trasnformaciones quedan en la variable train_gen:
+ 
+ train_gen = train_datage.flow(X_train_prep, Y_train, batch_size=batch_size)
 
 4. One-hot. Sobre la variable y_train, que contiene las etiquetas de clasificación del diagnóstico de cada imagen de entrenamiento, se aplica codificación one-hot para obtener una representación binaria de cada clase de diagnóstico de salida. El siguiente es el código aplicado: Y_train = tf.keras.utils.to_categorical(y_train).
 
