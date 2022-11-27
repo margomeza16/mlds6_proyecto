@@ -35,6 +35,18 @@ val.zip: Archivo zip descargado de la página de Kaggle, desde la dirección ind
 | test.zip | [Dataset2]([link/to/dataset2/report](https://drive.google.com/file/d/1AQWlyBOm9EG6tQOSk5HNbpHkpSCSVr0Y/view?usp=share_link)) |[preproc_img.py](https://github.com/margomeza16/mlds6_proyecto/blob/master/scripts/preprocessing/prepoc_img.py) | [Processed Dataset 2 Report](link/to/report2)|
 | val.zip | [Dataset3]([link/to/dataset2/report](https://drive.google.com/file/d/1TBS_el84d3lEgrNTbXezzLt6T1SYk0mV/view?usp=share_link)) |[preproc_img.py](https://github.com/margomeza16/mlds6_proyecto/blob/master/scripts/preprocessing/prepoc_img.py) | [Processed Dataset 3 Report](link/to/report2)|
 * Processed Data1 summary. <Provide brief summary of the processed data, such as why you want to process data in this way. More detailed information about the processed data should be in the Processed Data1 Report.>
+
+train.zip: Al conjunto de imagenes de entrenamiento se aplicaron los siguientes preprocesamientos:
+
+Se cargan en arreglo de numpy y mediante la función tf.keras.preprocessing.image.load_img, se les cambia el tamaño a 224*224 pixeles con representación RGB. Esto se hace debido a que se utilizará la red convolucional preentrenada ResNet50V2 para la extracción de características.
+
+A este arreglo de imágenes de numpy se aplica el procesamiento de la ResNet50V2, tf.keras.applications.resnet_v2.preprocess_input, que es requerido para escalar los pixeles de las imágenes entre -1 y 1.
+
+Finalmente y debido a que la red convolucional requiere gran cantidad de imágenes, sobre el procesamiento anterior se aplica data augmentation, para obtener más imagenes de entrenamiento transformando el conjunto original (cambios en traslación, rotación, intensidad, entre otros).
+
+Por último, a las etiquetas de las 4 clases de diagnóstico: ["0_normal/", "1_ulcerative_colitis/", "2_polyps/", "3_esophagitis/"], se les aplica códificación one-hot.
+
+
 * Processed Data2 summary. <Provide brief summary of the processed data, such as why you want to process data in this way. More detailed information about the processed data should be in the Processed Data2 Report.> 
 * * Processed Data3 summary. <Provide brief summary of the processed data, such as why you want to process data in this way. More detailed information about the processed data should be in the Processed Data3 Report.> 
 
