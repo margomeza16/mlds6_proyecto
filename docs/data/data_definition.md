@@ -86,4 +86,4 @@ Por último, a las etiquetas de las 4 clases de diagnóstico: ["0_normal/", "1_u
 Teniendo en cuenta que se va a implementar un modelo de Fine Tunnig, para la extracción de características del conjunto de imágenes de entrenamiento, se utiliza la red convolucional preeentrenada ResNet50V2, sin las capas densas del final.
 
 Para nuestro caso se construye función para obtener el vector de características através de la predicción del modelo entrenado. Asi mismo se construye función para obtener la similitud del coseno de los vectores de características de dos imágenes.
-* Feature Set2 summary. <Provide detailed description of the feature set, such as the meaning of each feature. More detailed information about the feature set should be in the Feature Set2 Report.> 
+ 
