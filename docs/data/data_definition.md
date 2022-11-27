@@ -78,8 +78,8 @@ Por último, a las etiquetas de las 4 clases de diagnóstico: ["0_normal/", "1_u
 
 | Feature Set Name | Input Dataset(s)   | Feature Engineering Tools/Scripts | Link to Report |
 | ---:| ---: | ---: | ---: | 
-| Feature Set 1 | [Dataset1](link/to/dataset1/report), [Processed Dataset2](link/to/dataset2/report) | [R_Script2.R](link/to/R/script/file/in/Code) | [Feature Set1 Report](link/to/report1)|
-| Feature Set 2 | [Processed Dataset2](link/to/dataset2/report) |[SQL_Script2.sql](link/to/sql/script/file/in/Code) | [Feature Set2 Report](link/to/report2)|
+| train.zip | [Dataset1](https://drive.google.com/file/d/1BwSoPrJzTLndqMjBMThOWr-qQe7FbOyU/view?usp=share_link), [Processed Dataset2](link/to/dataset2/report) | [extractor_caracteristicas.py](https://github.com/margomeza16/mlds6_proyecto/blob/master/scripts/preprocessing/extractor_caracteristicas.py) | [Feature Set1 Report](link/to/report1)|
+
 
 * Feature Set1 summary. <Provide detailed description of the feature set, such as the meaning of each feature. More detailed information about the feature set should be in the Feature Set1 Report.>
 
