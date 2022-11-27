@@ -5,6 +5,8 @@ Teniendo en cuenta que se va a implementar un modelo de Fine Tunning, para la ex
 extractor = tf.keras.applications.ResNet50V2(weights='imagenet', include_top=False,
                                             input_shape=(224, 224, 3))
                                             
+La extracción de características, consiste en la obtención de representaciones intermedias y las realiza de forma progresiva mediante las capas de convolución y de pooling conectadas de forma secuencial, hasta llegar a un nivel de abstracción suficiente, para que al adicionar capas densas de clasificación al final del modelo, se obtenga una predicción adecuada de la imágen. 
+
 ResNet50V2. Es una versión modificada de la red inicial ganadora del primer lugar en el concurso de clasificaci´on ILSVRX 2015, esta cuenta con un total de 152
 capas distribuidas con 50 bloques convolucionales, tiene aproximadamente 25.5 millones de parámetros dentro de su configuración. Esta utiliza una serie de de
 bloques con redes residuales profundas (Deep residual Network), que mediante conexiones entre cada uno de los bloques convolucionales ayuda a mejorar la precisión
