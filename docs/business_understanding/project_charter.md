@@ -257,6 +257,10 @@ De acuerdo a la anterior imágen, el cliente desde su computador accede a la apl
   * Data movement pipeline in production
   * Make a 1 slide diagram showing the end to end data flow and decision architecture
     * If there is a substantial change in the customer's business workflow, make a before/after diagram showing the data flow.
+  
+  ![Arquitectura](https://user-images.githubusercontent.com/73256719/204174786-fe7830b4-a7af-4486-8a43-8ab96f3becc3.png)
+  
+  La arquitectura de la red convolucional ResNet50V2 se puede revisar más detalladamente en el siguiente enlance: https://keras.io/api/applications/resnet/#resnet50-function
 
 ## Communication
 * How will we keep in touch? Weekly meetings?
