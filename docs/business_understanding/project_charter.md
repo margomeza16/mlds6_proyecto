@@ -255,11 +255,15 @@ De acuerdo a la anterior imágen, el cliente desde su computador accede a la apl
   
  
   * Data movement pipeline in production
+
+En la siguiente imagén se muestra el flujo que sigue una imagén de endoscopía desde se ingresa al modelo hasta el reporte de la predicción.
   
   ![Pipeline](https://user-images.githubusercontent.com/73256719/204177714-23f4ff75-8557-4053-9283-fb5d2f97865b.png)
   
   * Make a 1 slide diagram showing the end to end data flow and decision architecture
     * If there is a substantial change in the customer's business workflow, make a before/after diagram showing the data flow.
+
+En el siguiente diagrama se muestra la arquitectura del modelo desarrollado.
   
   ![Arquitectura](https://user-images.githubusercontent.com/73256719/204174786-fe7830b4-a7af-4486-8a43-8ab96f3becc3.png)
   
