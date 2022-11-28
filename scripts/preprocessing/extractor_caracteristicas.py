@@ -8,7 +8,7 @@ def get_modelResNet50V2(train_gen,X_train,X_val_prep,Y_val,batch_size):
 	
 	# congelamos el extractor de características y adicionamos capas para clasificación: 
 	for layer in extractor.layers:
-    	layer.trainable=False
+    	    layer.trainable=False
 
 	#Capa de global average pooling
 	pool = tf.keras.layers.GlobalAveragePooling2D()(extractor.output)
