@@ -101,7 +101,8 @@ poetry ini. Para la inicialización del proyecto.
 
 poetry add. Para adicionar paquetes, los cuales son incluidos como dependencias de forma autmática en el archivo pyproject.toml.
 
-poetry update. Para ctualizar el archivo poetry.lock con las ultimas versiones de dependencias instaladas. 
+poetry update. Para actualizar el archivo poetry.lock con las ultimas versiones de dependencias instaladas. 
 
 poetry build. Para construir archivo .whl con el que se publicará el proyecto.
+
 petry install. Para resolver dependencias incluidas en achivo pyproject. toml e instalar el proyecto.
