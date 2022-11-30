@@ -92,6 +92,7 @@ tmpfs           6.4G     0  6.4G   0% /proc/scsi
 tmpfs           6.4G     0  6.4G   0% /sys/firmware
 
 
+
 * Environment configuration (pyenv, poetry, jupyter, rstudio).
 
 Para la estructuración e instalación del proyecto se utilizará poetry, destacando la siguiente secuencia de comandos principales:
@@ -105,6 +106,7 @@ poetry update. Para actualizar el archivo poetry.lock con las ultimas versiones 
 poetry build. Para construir archivo .whl con el que se publicará el proyecto.
 
 petry install. Para resolver dependencias incluidas en achivo pyproject. toml e instalar el proyecto.
+
 
 
 * Execution pipelines (airflow, mlflow).
