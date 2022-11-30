@@ -73,7 +73,7 @@ UBUNTU_CODENAME=bionic
 
 Filesystem      Size  Used Avail Use% Mounted on
 
-overlay          79G   23G   56G  29% /
+overlay         79G    23G   56G  29%  /
 
 tmpfs            64M     0   64M   0% /dev
 
