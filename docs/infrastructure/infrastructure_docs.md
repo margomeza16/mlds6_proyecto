@@ -3,6 +3,9 @@
 In this folder you can add infrastructure documents/guides including:
 
 * Docker/kubernetes setup and management.
+
+Teniendo en cuenta lo aclarado en clase, esta parte no se diligencia por ahora debido a que este tema no se ha visto.
+
 * Server-based configuration (minimal system resources, VMs setup, webserver setup, among others).
 
 Teniendo en cuenta que el modelo se ha construido y entrenado en GoogleColab, los siguientes son los recursos asignados:
@@ -105,7 +108,7 @@ poetry update. Para actualizar el archivo poetry.lock con las ultimas versiones 
 
 poetry build. Para construir archivo .whl con el que se publicará el proyecto.
 
-petry install. Para resolver dependencias incluidas en achivo pyproject. toml e instalar el proyecto.
+poetry install. Para resolver dependencias incluidas en achivo pyproject. toml e instalar el proyecto.
 
 
 
