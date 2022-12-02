@@ -39,4 +39,4 @@ poetry install. Para resolver dependencias incluidas en achivo pyproject. toml e
 
 * Execution pipelines (airflow, mlflow).
 
-Para el despliegue se utilizará la plataforma MLFlow.
+Para el despliegue se utilizará la libreria MLFlow.
