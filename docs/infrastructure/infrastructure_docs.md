@@ -10,90 +10,17 @@ Teniendo en cuenta lo aclarado en clase, esta parte no se diligencia por ahora d
 
 Teniendo en cuenta que el modelo se ha construido y entrenado en GoogleColab, los siguientes son los recursos asignados:
 # Distribución de Linux:
-NAME="Ubuntu"
 
-VERSION="18.04.6 LTS (Bionic Beaver)"
-
-ID=ubuntu
-
-ID_LIKE=debian
-
-PRETTY_NAME="Ubuntu 18.04.6 LTS"
-
-VERSION_ID="18.04"
-
-HOME_URL="https://www.ubuntu.com/"
-
-SUPPORT_URL="https://help.ubuntu.com/"
-
-BUG_REPORT_URL="https://bugs.launchpad.net/ubuntu/"
-
-PRIVACY_POLICY_URL="https://www.ubuntu.com/legal/terms-and-policies/privacy-policy"
-
-VERSION_CODENAME=bionic
-
-UBUNTU_CODENAME=bionic
+![WhatsApp Image 2022-12-01 at 9 33 37 PM](https://user-images.githubusercontent.com/73256719/205202540-7f00e3e9-1c2e-4d32-b8e6-92479f7b5d9d.jpeg)
 
 # GPU asignada:
 
-+-----------------------------------------------------------------------------+
+![WhatsApp Image 2022-12-01 at 9 08 40 PM](https://user-images.githubusercontent.com/73256719/205202727-29d1d222-4a83-4d8b-a5db-bf8f2a1fd6c4.jpeg)
 
-| NVIDIA-SMI 460.32.03    Driver Version: 460.32.03    CUDA Version: 11.2     |
-
-|-------------------------------+----------------------+----------------------+
-
-| GPU  Name        Persistence-M| Bus-Id        Disp.A | Volatile Uncorr. ECC |
-
-| Fan  Temp  Perf  Pwr:Usage/Cap|         Memory-Usage | GPU-Util  Compute M. |
-
-|                               |                      |               MIG M. |
-
-|===============================+======================+======================|
-
-|   0  Tesla T4            Off  | 00000000:00:04.0 Off |                    0 |
-
-| N/A   38C    P8     8W /  70W |      0MiB / 15109MiB |      0%      Default |
-
-|                               |                      |                  N/A |
-
-+-------------------------------+----------------------+----------------------+
-                                                                               
-+-----------------------------------------------------------------------------+
-
-| Processes:                                                                  |
-
-|  GPU   GI   CI        PID   Type   Process name                  GPU Memory |
-
-|        ID   ID                                                   Usage      |
-
-|=============================================================================|
-
-|  No running processes found                                                 |
-
-+-----------------------------------------------------------------------------+
 
 # Disco Asignado:
 
-Filesystem      Size  Used Avail Use% Mounted on
-
-overlay         79G    23G   56G  29%  /
-
-tmpfs            64M     0   64M   0% /dev
-
-shm             5.7G     0  5.7G   0% /dev/shm
-
-/dev/root       2.0G  1.1G  910M  54% /sbin/docker-init
-
-tmpfs           6.4G   48K  6.4G   1% /var/colab
-
-/dev/sda1        75G   41G   35G  55% /opt/bin/.nvidia
-
-tmpfs           6.4G     0  6.4G   0% /proc/acpi
-
-tmpfs           6.4G     0  6.4G   0% /proc/scsi
-
-tmpfs           6.4G     0  6.4G   0% /sys/firmware
-
+![WhatsApp Image 2022-12-01 at 9 33 36 PM](https://user-images.githubusercontent.com/73256719/205202608-33c2f1ad-0c1b-4aef-a24d-0ac68de06090.jpeg)
 
 
 * Environment configuration (pyenv, poetry, jupyter, rstudio).
@@ -113,3 +40,5 @@ poetry install. Para resolver dependencias incluidas en achivo pyproject. toml e
 
 
 * Execution pipelines (airflow, mlflow).
+
+Para el despliegue se utilizará la plataforma MLFlow.
