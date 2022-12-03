@@ -5,7 +5,7 @@ Teniendo en cuenta que se va a implementar un modelo de Fine Tunning, para la ex
 extractor = tf.keras.applications.ResNet50V2(weights='imagenet', include_top=False,
                                             input_shape=(224, 224, 3))
                                             
-En este caso, la extracción de características mediante la red convolucional, consiste en la obtención de representaciones intermedias, de forma progresiva, mediante las capas de convolución y de pooling conectadas de forma secuencial, hasta llegar a un nivel de abstracción suficiente, para que al adicionar capas densas de clasificación al final del modelo, se obtenga una predicción adecuada de la imágen en estudio. Esto se puede apreciar en la siguiente figura:
+En este caso, la extracción de características mediante la red convolucional, consiste en la obtención de representaciones intermedias, de forma progresiva, mediante las capas de convolución y de pooling conectadas de forma secuencial, hasta llegar a un nivel de abstracción suficiente, para que al adicionar capas densas de clasificación al final del modelo, se obtenga una predicción adecuada de la imágen en estudio. En la siguiente figura se muestran algunas convoluciones de la ResNet50V2, en la columna de la derecha se resalta la extracción de características realizada por cada convolución:
 
 ![WhatsApp Image 2022-12-01 at 9 19 04 PM (1)](https://user-images.githubusercontent.com/73256719/205203317-81649b4c-8b01-4a5b-a476-a64b9bfe3ccc.jpeg)
 
