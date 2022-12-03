@@ -46,9 +46,13 @@ poetry install. Para resolver dependencias incluidas en achivo pyproject. toml e
 Para el despliegue y ejecución del modelo se utilizará la libreria MLFlow, mediante los siguientes comandos básicos:
 
 Inicialización del proyecto mediante la configuración del archivo **MLproject**
+
 creación de experimientos mediante **mlflow experiments**
+
 Ejecución del proyecto mediante **mlflow run**
+
 Generación del dashboard mediante **mlflow server**
+
 Despliegue del modelo mediante **mlflow models serve**
 
 
