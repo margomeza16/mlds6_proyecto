@@ -8,6 +8,18 @@ Teniendo en cuenta lo aclarado en clase, esta parte no se diligencia por ahora d
 
 * Server-based configuration (minimal system resources, VMs setup, webserver setup, among others).
 
+# Configuración Virtual Machine (VM) Linux
+
+OS: Debian GNU/Linux 11 (bullseye) x86_64
+Host: Google Compute Engine
+Kernel: 5.10.0-19-cloud-amd64
+Uptime: 29 days, 20 hours, 29 mins
+Packages: 769 (dpkg)
+Shell: bash 5.1.4
+Terminal: /dev/pts/0
+CPU: Intel Xeon (2) @ 2.199GHz
+Memory: 131MiB / 3930MiB
+
 Teniendo en cuenta que el modelo se ha construido y entrenado en GoogleColab, los siguientes son los recursos asignados:
 # Distribución de Linux:
 
