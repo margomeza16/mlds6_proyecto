@@ -29,7 +29,7 @@ Teniendo en cuenta que el modelo se ha construido y entrenado en GoogleColab, lo
 
 Para la estructuración e instalación del proyecto se utilizará poetry, destacando la siguiente secuencia de comandos principales:
 
-poetry ini. Para la inicialización del proyecto. Inicializa archivo pyproject.toml
+poetry ini. Para la inicialización del proyecto. Inicializa archivo pyproject.toml, en el que se definen las dependencias del proyecto.
 
 poetry add. Para adicionar paquetes, los cuales son incluidos como dependencias de forma autmática en el archivo pyproject.toml.
 
