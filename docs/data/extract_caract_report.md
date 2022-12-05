@@ -5,9 +5,7 @@ Teniendo en cuenta que se va a implementar un modelo de Fine Tunning, para la ex
 extractor = tf.keras.applications.ResNet50V2(weights='imagenet', include_top=False,
                                             input_shape=(224, 224, 3))
                                             
-En este caso, la extracción de características mediante la red convolucional, consiste en la obtención de representaciones intermedias, de forma progresiva, mediante las capas de convolución y de pooling conectadas de forma secuencial, hasta llegar a un nivel de abstracción suficiente, para que al adicionar capas densas de clasificación al final del modelo, se obtenga una predicción adecuada de la imágen en estudio. En la siguiente figura se muestran algunas convoluciones de la ResNet50V2, en la columna de la derecha se resalta la extracción de características realizada por cada convolución:
-
-![WhatsApp Image 2022-12-01 at 9 19 04 PM (1)](https://github.com/margomeza16/mlds6_proyecto/blob/master/docs/data/convoluciones.jpg)
+En este caso, la extracción de características mediante la red convolucional, consiste en la obtención de representaciones intermedias, de forma progresiva, mediante las capas de convolución y de pooling conectadas de forma secuencial, hasta llegar a un nivel de abstracción suficiente, para que al adicionar capas densas de clasificación al final del modelo, se obtenga una predicción adecuada de la imágen en estudio. En la imagen al final de este documento se muestran algunas convoluciones de la ResNet50V2, en la que se observa la extracción de características realizada por cada convolución.
 
 Para nuestro caso, una vez construido y entrenado el modelo se construyó función para la extracción del vector de característiscas de 4 imágenes aleatorias del conjunto de test, mediante la función predict del modelo, para determinar su clasificación. Asi mismo se construyo función para obtener la similitud del coseno entre dos vectores de características de dos imágenes distintas.
 
@@ -16,3 +14,6 @@ capas distribuidas con 50 bloques convolucionales, tiene aproximadamente 25.5 mi
 bloques con redes residuales profundas (Deep residual Network), que mediante conexiones entre cada uno de los bloques convolucionales ayuda a mejorar la precisión
 del modelo evitando incrementar el número de capas y parámetros. [Tomado del siguiente artículo: Kaiming He y col. “Deep residual learning for image recognition”. En: Proceedings of the IEEE Computer Society Conference on Computer Vision and Pattern Recognition. Vol. 2016-Decem. 2016, p´ags. 770-778. isbn: 9781467388504. doi:
 10.1109/CVPR.2016.90.]
+
+
+![WhatsApp Image 2022-12-01 at 9 19 04 PM (1)](https://github.com/margomeza16/mlds6_proyecto/blob/master/docs/data/convoluciones.jpg)
