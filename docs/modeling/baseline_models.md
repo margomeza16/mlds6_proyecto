@@ -7,7 +7,7 @@ _Baseline model is the the model a data scientist would train and evaluate quick
 ## Analytic Approach
 * What is target definition
 
-El objetivo del modelo es realizar la predicción del diagnóstico de posibles enfermedades gastrointestinales y del colon a partir del análisis de una imagen de endoscopía digestiva. Se consideran 4 posibles clases de diagnóstico a saber:
+El objetivo es construir un modelo de Machine Learning para realizar la predicción automática del diagnóstico de posibles enfermedades gastrointestinales y del colon a partir del análisis de una imagen de endoscopía digestiva. Se consideran 4 posibles clases de diagnóstico a saber:
 
 0: Diagnostico normal (Sin enfermadad).
 
@@ -94,6 +94,8 @@ Asi mismo, por sus resultados, consumo de recursos y tiempo de entrenamiento, se
 ## Results (Model Performance)
 * ROC/Lift charts, AUC, R^2, MAPE as appropriate
 * Performance graphs for parameters sweeps if applicable
+
+
 
 ## Model Understanding
 
