@@ -96,14 +96,15 @@ Asi mismo, por sus resultados, consumo de recursos y tiempo de entrenamiento, se
 * Performance graphs for parameters sweeps if applicable
 
 A continuación se muestra la comparación de las curvas de accuracy y pérdida de los modeles de transfer learning y fine tuning:
-
 ![](https://github.com/margomeza16/mlds6_proyecto/blob/master/docs/modeling/rendimiento%201.jpg)
 
+De las anteriores gráficas comparativas, se observa que el modelo de fine tuning tiene, ligeramente, un mejor desempeño que transfer learning, ya que las curvas de perdida para entrenamiento y validación, son muy similares en su forma y cercanas, se mantienen paralelas y sin grandes variaciones en su trayectoria, con tendencia a la baja, desde las primeras iteraciones y estan un poco por debajo de las cuervas de perdida de transfer learning. Asi mismo, las curvas de accuracy para entrenamiento y validación, tambien tienen una forma similar, sin grandes variaciones en su trayectoria, paralelas y cercanas, con valores altos desde el comienzo de las iteraciones y con tendencia al alza a lo largo de las iteraciones y se mantienen por arriba de las curvas de transfer learning. Por su parte, las curvas de perdida de transfer learning, tanto para entrenamiento como para validación tambien tienden a la baja a lo largo de las iteraciones, solo que su forma es más irregular (presentan grandes variaciones en su trayectoria) y estan un poco por arriba de las curvas de fine tuning. De forma similar las curvas de accuracy de transfer learning, tanto para entrenamiento como para validación, tambien tienden al alza a lo largo de las iteraciones, pero con irregularidades (variaciones) en su trayectoria y estan un poco por debajo del accuracy de fine tuning.
+
 A continuación se muestran las métricas de desempeño de Transfer Learning y Fine Tunning:
-
 ![](https://github.com/margomeza16/mlds6_proyecto/blob/master/docs/modeling/Metricas%20TL.gif)
-
 ![](https://github.com/margomeza16/mlds6_proyecto/blob/master/docs/modeling/metricas%20ft.gif)
+Aunque en terminos generales las anteriores métricas de los dos modelos son muy buenas, con valores promedios de precision, recall y f1-score, muy similares, al revisarlas en detalle, se observar que el accuracy y las medias de precision, recall y f1-score son un poco mejores en el modelo de fine tuning en la mayoria de las clases, lo que se puede interpretar como que logra, ligeramente, un mejor desempeño en la clasificación de las imagenes en las 4 clases.
+
 ## Model Understanding
 
 * Variable Importance (significance)
