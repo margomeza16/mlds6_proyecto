@@ -102,6 +102,7 @@ De las anteriores gráficas comparativas, se observa que el modelo de fine tunin
 
 A continuación se muestran las métricas de desempeño de Transfer Learning y Fine Tunning:
 ![](https://github.com/margomeza16/mlds6_proyecto/blob/master/docs/modeling/metricas%20tl.jpg)
+
 ![](https://github.com/margomeza16/mlds6_proyecto/blob/master/docs/modeling/metricas%20ft.jpg)
 
 Aunque en terminos generales las anteriores métricas de los dos modelos son muy buenas, con valores promedios de precision, recall y f1-score, muy similares, al revisarlas en detalle, se observar que el accuracy y las medias de precision, recall y f1-score son un poco mejores en el modelo de fine tuning en la mayoria de las clases, lo que se puede interpretar como que logra, ligeramente, un mejor desempeño en la clasificación de las imagenes en las 4 clases.
