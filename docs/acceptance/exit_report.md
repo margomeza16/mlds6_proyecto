@@ -3,7 +3,9 @@
 Instructions: Template for exit criteria for data science projects. This is concise document that includes an overview of the entire project, including details of each stage and learning. If a section isn't applicable (e.g. project didn't include a ML model), simply mark that section as "Not applicable". Suggested length between 5-20 pages. Code should mostly be within code repository (not in this document).
 
 Customer: <Enter Customer Name\>
+	
 	Juan Sebastian Lara
+	
 	Juan Sebastian Malagón
 
 Team Members: <Enter team member' names. Please also enter relevant parties names, such as team lead, Account team, Business stakeholders, etc.\>
@@ -12,7 +14,7 @@ Team Members: <Enter team member' names. Please also enter relevant parties name
 
 <Executive summary of entire solution, brief non-technical overview\>
 
-La solución desarrollado consiste en la construcción y despliegue de un modelo de Deep Learning para realizar el diagnóstico automático de posibles enfermedades gastrintestinales y del colón, a partir, del estudio de imágenes de endoscopías digestivas y del colon.
+La solución desarrollada consiste en la construcción y despliegue de un modelo de Deep Learning para realizar el diagnóstico automático de posibles enfermedades gastrointestinales y del colón, a partir, del estudio de imágenes de endoscopías digestivas y del colon.
 
 ##	Business Domain
 <Industry, business domain of customer\>
@@ -22,7 +24,7 @@ Sector médico. Especificamente en la especialidad de Gastroenterología endosc�
 ##	Business Problem
 <Business problem and exact use case(s), why it matters\>
 	
-La detección automática de patologías medicas, mediante la aplicación de técnicas de machine learning, es de suma importancia, por cuanto permite contar con diagnósticos acertados, reduciendos costos económicos y tiempos en la obtención de los resultados, lo que se traduce en una mejor oportunidad de atención a los pacientes, para ofrecerles un tratamiento más oportuno y acertado. Alineados con esta necesidad, se desarrollo este proyecto, en el que se construyó modelo de Deep Learning, para realizar el diagnóstico automático de posibles enfermedades del sistema digestivo y del colon.
+La detección automática de patologías medicas, mediante la aplicación de técnicas de machine learning, es de suma importancia, por cuanto permite contar con diagnósticos acertados, reduciendos costos económicos y tiempos en la obtención de los resultados, lo que se traduce en una mejor oportunidad de atención a los pacientes, ofreciéndoles un tratamiento más oportuno y acertado. Alineados con esta necesidad, se desarrollo este proyecto, en el que se construyó modelo de Deep Learning, para realizar el diagnóstico automático de posibles enfermedades del sistema digestivo y del colon.
 
 ##	Data Processing
 <Schema of original datasets, how data was processed, final input data schema for model\>
