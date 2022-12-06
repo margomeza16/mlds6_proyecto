@@ -7,7 +7,7 @@ _Baseline model is the the model a data scientist would train and evaluate quick
 ## Analytic Approach
 * What is target definition
 
-El objetivo es construir un modelo de Machine Learning para realizar la predicción automática del diagnóstico de posibles enfermedades gastrointestinales y del colon a partir del análisis de una imagen de endoscopía digestiva. Se consideran 4 posibles clases de diagnóstico a saber:
+El objetivo es construir un modelo de Deep Learning para realizar la predicción automática del diagnóstico de posibles enfermedades gastrointestinales y del colon a partir del análisis de una imagen de endoscopía digestiva. Se consideran 4 posibles clases de diagnóstico a saber:
 
 0: Diagnostico normal (Sin enfermadad).
 
@@ -89,7 +89,7 @@ El precalentamiento para fine tunning, se hizo con 2 épocas y el mismo learning
 
 Este modelo de fine tuning, con los anteriores parámetros, fue seleccionado como el mejor, por las métricas de desempeño btenidas, como son, accuracy, precision, F1-Score, recall y las curvas de pérdida y validación  en entrenamiento y validación. Se llego a este modelo después de probar con diferentes valores de hiperparámetros como learning rate, batch_size, epocas, cambiando el número de neuronas del capa densa y adicionando más capas densas al final del modelo. Siendo éste, con el que se lograron obtener las mejores metricas.
 
-Asi mismo, por sus resultados, consumo de recursos y tiempo de entrenamiento, se selecciono la red ResNet50V2, después de ensayar con varios modelos pre-entrenados, como MobileNetV2 y DenseNet12.
+Asi mismo, por sus resultados, tamaño, consumo de recursos y tiempo de entrenamiento, se selecciono la red ResNet50V2, después de ensayar con varios modelos pre-entrenados, como MobileNetV2 y DenseNet12.
 
 ## Results (Model Performance)
 * ROC/Lift charts, AUC, R^2, MAPE as appropriate
@@ -113,12 +113,24 @@ Aunque en terminos generales las anteriores métricas de los dos modelos son muy
 
 * Insight Derived from the Model
 
+Teniento en cuenta las interpretaciones de las anteriores métricas, tanto el modelo de Transfer Learning como el modelo de Fine Tunning, construidos, lograron una excelente desempeño. Estos resultados se lograron gracias al uso de una red convolucional entrenada como modelo base y robusto para la extracción de características, gracias a su entrenamiento con millones de imágenes. Asi mismo, facilitó la construcción de estos modelos de transfer learning y fine tunning, evidenciando un resultado más preciso en la clasificación de las imágenes.
+
+Con base a las anteriores interpretaciones, basadas en la comparación de los dos modelos en terminos de las metricas de precision, recall, f1-score y accuracy y de las curvas de perdida y acuracy en entrenamiento y validación, se concluye que el modelo de Fine Tuning da un mejor resultado. Resaltando los valores promedios de precision, recall y f1-score del mejor modelo de fine tuning, que alcanzan el valor del 99%, frente al 98% obtenido por el mejor modelo de transfer learning, que tambien es muy bueno. Asi mismo, se observa que el accuracy y las medias de precision, recall y f1-score son un poco mejores en el modelo de fine tuning para cada una de las clases, lo que se puede interpretar como que logra, ligeramente, un mejor desempeño en la clasificación de las imagenes en las 4 clases. De igual manera, como se explico en el numeral anterior, la forma de las curvas de perdida y accuracy de entrenamiento y validación, su tendencia, cercania, similitud y variación, desde el comienzo y a lo largo de las iteraciones son mejores en Fine Tuning.
+
 ## Conclusion and Discussions for Next Steps
 
 * Conclusion on Feasibility Assessment of the Machine Learning Task
+
+Gracias a los resultados obtenidos, el modelo desarrollo en este proyecto es de gran aplicación, ya que permite lograr diagnósticos muy acertados, ahorrando tiempo y costos, lo cual se deriva en una mejor atención a los pacientes, permitiéndoles la oportunidad de contar con tratamiento más rápido y acertado, con base al diagnóstico emitido por el modelo.
+
+Un aprendizaje del desarrollo de este proyecto,  es que se tiene una responsabilidad muy grande al desarrollar modelos relacionados con el diagnóstico de posibles enfermedades a partir de imágenes médicas, ya que antes de su puesta en producción, se deben someter a muchas pruebas y tuning para lograr unas metricas de precisión muy altas y similares en cada una de las clases y en los valores promedios (superiores al 99%), ya que las consecuencias de predicciones erroneas, puede ser muy alto, al tratarse de vidas humanas.
+
+Como siguientes pasos, se considera la posibilidad de ampliar las clases de diagnóstico del modelo desarrollo, de tal por forma que se pueda ampliar su uso. Para lograrlo es necesario, contar con una cantidad considerable de imágenes de endoscopias digestivas asociadas a otras patalogías.
 
 * Discussion on Overfitting (If Applicable)
 
 * What other Features Can Be Generated from the Current Data
 
 * What other Relevant Data Sources Are Available to Help the Modeling
+
+Para ayudar a enriquecer el modelo, es necesario contar con base pública de imágenes de endoscopias digestivas, clasificadas por su diagnóstico, de las diferentes instituciones médicas que realicen este tipo de exámenes.
