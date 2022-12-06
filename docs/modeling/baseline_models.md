@@ -99,11 +99,11 @@ A continuación se muestra la comparación de las curvas de accuracy y pérdida 
 
 ![](https://github.com/margomeza16/mlds6_proyecto/blob/master/docs/modeling/rendimiento%201.jpg)
 
-
 A continuación se muestran las métricas de desempeño de Transfer Learning y Fine Tunning:
 
 ![](https://github.com/margomeza16/mlds6_proyecto/blob/master/docs/modeling/Metricas%20TL.gif)
 
+![](https://github.com/margomeza16/mlds6_proyecto/blob/master/docs/modeling/metricas%20ft.gif)
 ## Model Understanding
 
 * Variable Importance (significance)
