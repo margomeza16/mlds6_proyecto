@@ -95,7 +95,9 @@ Asi mismo, por sus resultados, consumo de recursos y tiempo de entrenamiento, se
 * ROC/Lift charts, AUC, R^2, MAPE as appropriate
 * Performance graphs for parameters sweeps if applicable
 
+A continuación se muestra la comparación de las curvas de accuracy y pérdida de los modeles de transfer learning y fine tuning:
 
+[://github.com/margomeza16/mlds6_proyecto/blob/master/docs/modeling/rendimiento%201.jpg]
 
 ## Model Understanding
 
