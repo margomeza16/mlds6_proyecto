@@ -97,7 +97,7 @@ Asi mismo, por sus resultados, consumo de recursos y tiempo de entrenamiento, se
 
 A continuación se muestra la comparación de las curvas de accuracy y pérdida de los modeles de transfer learning y fine tuning:
 
-https://github.com/margomeza16/mlds6_proyecto/blob/master/docs/modeling/rendimiento%201.jpg
+[https://github.com/margomeza16/mlds6_proyecto/blob/master/docs/modeling/rendimiento%201.jpg]
 
 ## Model Understanding
 
