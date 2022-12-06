@@ -131,6 +131,8 @@ Como siguientes pasos, se considera la posibilidad de ampliar las clases de diag
 
 * What other Features Can Be Generated from the Current Data
 
+La data actual, que son las imágenes etiquetadas según su diagnóstico, por especialistas, podría ser enriquecido con imágenes de nuevos diagnósticos, tanto de las clases actuales, como de otro tipos de patologías. Esto permitiría reentrenar el modelo y ampliar su uso, al incluir nuevos tipos de diagnósticos.
+
 * What other Relevant Data Sources Are Available to Help the Modeling
 
 Para ayudar a enriquecer el modelo, es necesario contar con base pública de imágenes de endoscopias digestivas, clasificadas por su diagnóstico, de las diferentes instituciones médicas que realicen este tipo de exámenes.
