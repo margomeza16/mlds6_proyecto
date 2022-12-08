@@ -126,3 +126,23 @@ https://github.com/margomeza16/mlds6_proyecto
 
 ## Appendix
 <Other material that seems relevant – try to keep non-appendix to <20 pages but more details can be included in appendix if needed\>
+
+Para el desarrollo de este proyecto se tomaron las siguiente fuentes:
+ - Las imágenes de endoscopías para el entrenamiento, prueba y validación se descargaron de Kaggle, de la siguiente dirección:
+	
+https://www.kaggle.com/datasets/francismon/curated-colon-dataset-for-deep-learning?resource=download
+
+Como soporte médico para la motivación de este proyecto, se tomaron en cuenta los siguientes paper's, desde el link de Kaggle, en los cuales se detalle el trabajo realizado para la obtención de las imágenes diagnóstico y el propósito de disponer de las mismas para implementar soluciones automatizadas mediante técnicas de machine learning que permitan hacer el diagnóstico de patalogías gastrointestinales y del colon de forma más rápida, menos costosa y con un nivel alto de confianza. A continuación se transcriben textualmente los enlaces:
+	
+KVASIR Dataset (https://dl.acm.org/doi/abs/10.1145/3083187.3083212)
+K. Pogorelov et al., "KVASIR", Proceedings of the 8th ACM on Multimedia Systems Conference, 2017. DOI: 10.1145/3083187.3083212.
+
+ETIS-Larib-Polyp DB Dataset (https://link.springer.com/article/10.1007/s11548-013-0926-3/)
+J. Silva, A. Histace, O. Romain, X. Dray and B. Granado, "Toward embedded detection of polyps in WCE images for early diagnosis of colorectal cancer", International Journal of Computer Assisted Radiology and Surgery, vol. 9, no. 2, pp. 283-293, 2013. DOI:10.1007/s11548-013-0926-3.
+	
+This is used in the study:
+
+F. J. P. Montalbo, "Diagnosing Gastrointestinal Diseases from Endoscopy Images through a Multi-Fused CNN with Auxiliary Layers, Alpha Dropouts, and a Fusion Residual Block," Biomedical Signal Processing and Control (BSPC), vol. 76, July, 2022, doi: 10.1016/j.bspc.2022.103683
+
+Paper link: https://www.sciencedirect.com/science/article/pii/S1746809422002051
+	
