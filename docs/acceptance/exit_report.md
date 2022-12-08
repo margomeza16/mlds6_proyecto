@@ -116,6 +116,9 @@ What is the benefit (ROI, savings, productivity gains etc)  for the customer? If
 
 ##	Links
 <Links to published case studies, etc.; Link to git repository where all code sits\>
+	
+El siguiente es el link del repositorio del proyecto en GitHub:
+https://github.com/margomeza16/mlds6_proyecto
 
 ##	Next Steps
  
