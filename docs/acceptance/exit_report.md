@@ -141,7 +141,7 @@ Comparación de las curvas de pérdida y validación del conjunto de imágenes d
 	
 Evaluación en terminos de accuracy, precision, recall y f1. Obteniendo los siguientes resultados:
 	
-
+![](https://github.com/margomeza16/mlds6_proyecto/blob/master/docs/modeling/metricas%20ft.jpg)
 	
 ##	Solution Architecture
 <Architecture of the solution, describe clearly whether this was actually implemented or a proposed architecture. Include diagram and relevant details for reproducing similar architecture. Include details of why this architecture was chosen versus other architectures that were considered, if relevant\>
