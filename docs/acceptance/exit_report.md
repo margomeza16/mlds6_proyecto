@@ -84,6 +84,10 @@ One-hot. Sobre la variable y_val, que contiene las etiquetas de clasificación d
 	
 ##	Modeling, Validation
 <Modeling techniques used, validation results, details of how validation conducted\>
+	
+	Se construyo un modelo de Fine Tunning, partiendo de la red convolucional preentrenada ResNetV50 para la extracción de características, sobre esta se adicionaron las capas finales para la clasificación. El siguiente enlace muestra la arquitectura de la red construida:
+	
+	
 
 ##	Solution Architecture
 <Architecture of the solution, describe clearly whether this was actually implemented or a proposed architecture. Include diagram and relevant details for reproducing similar architecture. Include details of why this architecture was chosen versus other architectures that were considered, if relevant\>
