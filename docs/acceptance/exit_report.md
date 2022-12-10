@@ -137,7 +137,9 @@ hist_ft = ft_model.fit(train_gen, validation_data=(X_val_prepro, Y_val),
 
 Para la validación del modelo se utilizaron las siguientes metricas:
 
-Comparación de las curvas de pérdida y validación del conjunto de imágenes de test vs el conjunto de imágenes de validación.
+Comparación de las curvas de pérdida y validación del conjunto de imágenes de test vs el conjunto de imágenes de validación. La siguiente gráfica muestra estas curvas:
+
+![](https://github.com/margomeza16/mlds6_proyecto/blob/master/docs/acceptance/curvas_ft.jpg)
 	
 Evaluación en terminos de accuracy, precision, recall y f1. Obteniendo los siguientes resultados:
 	
