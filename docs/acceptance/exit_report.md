@@ -85,10 +85,64 @@ One-hot. Sobre la variable y_val, que contiene las etiquetas de clasificación d
 ##	Modeling, Validation
 <Modeling techniques used, validation results, details of how validation conducted\>
 	
-	Se construyo un modelo de Fine Tunning, partiendo de la red convolucional preentrenada ResNetV50 para la extracción de características, sobre esta se adicionaron las capas finales para la clasificación. El siguiente enlace muestra la arquitectura de la red construida:
+Se construyo un modelo de Fine Tunning, partiendo de la red convolucional preentrenada ResNet50V2 para la extracción de características, sobre esta se adicionaron las capas finales para la clasificación. El siguiente enlace muestra la arquitectura de la ResNet50V2:
 	
+https://github.com/margomeza16/mlds6_proyecto/blob/master/docs/data/convoluciones.jpg
+
+No se incluyeron las capas finales de la ResNet50V2, en su lugar se adicionaron las siguientes 4 capas de clasificación:
+	
+#Capa de global average pooling
+
+pool = tf.keras.layers.GlobalAveragePooling2D()(extractor.output)
+
+#capa densa con 32 neuronas y activación relu
+
+dense1 = tf.keras.layers.Dense(32, activation="relu")(pool)
+
+#Capa de dropout con taza de 0.2 para regularización
+
+drop1 = tf.keras.layers.Dropout(0.2)(dense1)
+
+#Capa densa de salida con 4 clases con activación softmax
+
+dense2 = tf.keras.layers.Dense(4, activation="softmax")(drop1)
+	
+El modelo se compilo con los siguientes parámetros:
+	
+ft_model.compile(loss="categorical_crossentropy", optimizer=tf.optimizers.Adam(lr=1e-3),
+                 metrics=["accuracy"])
+
+Se hizo un precalentamiento de dos epocas con los siguientes parámetros:
+
+batch_size = 32
+	
+ft_model.fit_generator(train_gen, validation_data=(X_val_prepro, Y_val),
+                       epochs=2, steps_per_epoch=X_train.shape[0]//batch_size)
+
+Después del precalentamiento, se compila el modelo con los siguientes parámetros:
+	
+ft_model.compile(loss="categorical_crossentropy", optimizer=tf.optimizers.Adam(lr=1e-4),
+                 metrics=["accuracy"])
 	
 
+El entrenamiento del modelo se hizo con los siguientes parámetros:
+
+Se descongelaron para entrenar las últimas 13 capas convolucionales de la red ResNet50V2 más las 4 capas de clasificación adicionadas al final.
+
+batch_size = 32
+	
+hist_ft = ft_model.fit(train_gen, validation_data=(X_val_prepro, Y_val),
+                                 epochs=20, steps_per_epoch=X_train.shape[0]//batch_size,
+                                 callbacks=[best_callback])
+
+Para la validación del modelo se utilizaron las siguientes metricas:
+
+Comparación de las curvas de pérdida y validación del conjunto de imágenes de test vs el conjunto de imágenes de validación.
+	
+Evaluación en terminos de accuracy, precision, recall y f1. Obteniendo los siguientes resultados:
+	
+
+	
 ##	Solution Architecture
 <Architecture of the solution, describe clearly whether this was actually implemented or a proposed architecture. Include diagram and relevant details for reproducing similar architecture. Include details of why this architecture was chosen versus other architectures that were considered, if relevant\>
 	
