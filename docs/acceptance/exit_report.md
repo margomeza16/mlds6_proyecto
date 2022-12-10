@@ -141,6 +141,7 @@ Comparación de las curvas de pérdida y validación del conjunto de imágenes d
 
 ![](https://github.com/margomeza16/mlds6_proyecto/blob/master/docs/acceptance/curvas_ft.jpg)
 	
+	
 Evaluación en terminos de accuracy, precision, recall y f1. Obteniendo los siguientes resultados:
 	
 ![](https://github.com/margomeza16/mlds6_proyecto/blob/master/docs/modeling/metricas%20ft.jpg)
