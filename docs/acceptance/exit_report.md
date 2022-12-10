@@ -87,7 +87,7 @@ One-hot. Sobre la variable y_val, que contiene las etiquetas de clasificación d
 	
 Se construyo un modelo de Fine Tunning, partiendo de la red convolucional preentrenada ResNet50V2 para la extracción de características, sobre esta se adicionaron 4 capas finales para la clasificación. El siguiente enlace muestra la arquitectura de la red de fine tunning construida:
 	
-https://github.com/margomeza16/mlds6_proyecto/blob/master/docs/acceptance/arq_ft.jpg
+[](https://github.com/margomeza16/mlds6_proyecto/blob/master/docs/acceptance/arq_ft.jpg)
 
 No se incluyeron las capas finales de la ResNet50V2, en su lugar se adicionaron las siguientes 4 capas de clasificación:
 	
