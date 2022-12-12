@@ -125,19 +125,19 @@ Contribuir en el diagnóstico temprano para el tratamiento oportuno de posibles 
 
 * What is a quantifiable metric  (e.g. reduce the fraction of users with 4-week inactivity)
 
-Reducir el tiempo de generación del diagnóstico de una endoscopía digestiva que tarda en promedio 1800 segundos (30 minutos).
+Reducir el tiempo de generación del diagnóstico de una endoscopía digestiva que tarda en promedio 1200 segundos (20 minutos).
 
 Reducir el porcentaje de costo en la generación del diagnístico de una endoscopía digestiva, que corresponde aproximadamente al 20% del salario del gastroenterologo endoscopista.
 
 * Quantify what improvement in the values of the metrics are useful for the customer scenario (e.g. reduce the  fraction of users with 4-week inactivity by 20%)
 
-Reducir el tiempo de generación del diagnóstico de una endoscopía digestiva pasando de 1800 segundos a 60 segundos. 
+Reducir el tiempo de generación del diagnóstico de una endoscopía digestiva pasando de 1200 segundos (20 minutos) a 60 segundos (1 minuto). 
 
 Reducir en 20% el costo en la generación del diagnístico de una endoscopía digestiva.
 
 * What is the baseline (current) value of the metric? (e.g. current fraction of users with 4-week inactivity = 60%)
 
-Tiempo promedio de generación de diagnóstico actual = 2 diagnósticos por hora = 30 minutos (1800 segundos) por diagnóstico.
+Tiempo promedio de generación de diagnóstico actual = 3 diagnósticos por hora = 20 minutos (1200 segundos) por diagnóstico.
 
 Costo promedio de generación de diagnóstico actual = 20% del salario del gastroenterologo endoscopista.
 
