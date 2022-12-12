@@ -20,7 +20,7 @@ train_datagen = tf.keras.preprocessing.image.ImageDataGenerator(rotation_range=1
                                                                 horizontal_flip=True,
                                                                 fill_mode='constant')
  
- Las imágenes generadas para el entrenamiento mediante las trasnformaciones quedan en la variable train_gen:
+ Las imágenes generadas para el entrenamiento mediante las transformaciones quedan en la variable train_gen:
  
  train_gen = train_datage.flow(X_train_prep, Y_train, batch_size=batch_size)
 
