@@ -4,7 +4,7 @@
 
 * Who is the client, what business domain the client is in. 
 
-Este proyecto esta  dirigido al sector salud, con el objetivo de apoyar en el diagnóstico automatizado de patologías digestivas y del colon, a partir de imágenes endoscópicas gastrointestinales. El cliente son las áreas de gastroenterología de las clinicas y hospitales del sector salud y el usuario directo es el médico especialista en gastroentrologia endoscospica.
+Este proyecto esta  dirigido al sector salud, con el objetivo de apoyar en el diagnóstico automatizado de patologías digestivas y del colon, a partir de imágenes endoscópicas gastrointestinales. El cliente son las áreas de gastroenterología de las clinicas y hospitales del sector salud y el usuario directo es el médico especialista en gastroentrologia endoscospica. 
 
 * What business problems are we trying to address?
 
@@ -119,7 +119,7 @@ El servicio va ser consumido por el cliente a partir de una API Web implementada
 ## Metrics
 * What are the qualitative objectives? (e.g. reduce user churn)
 
-Mejorar la calidad de atención y el nivel de satisfacción de pacientes del área de gastroenterología en el proceso de diagnóstico de enfermedades gastrointestinales.
+Mejorar la calidad de atención y el nivel de satisfacción de pacientes del área de gastroenterología en el proceso de diagnóstico de enfermedades gastrointestinales. Adicionalmente, liberar al personal médico de la manualidad que representa la clasificación o diagnóstico de las imágenes de endoscopias.
 
 Contribuir en el diagnóstico temprano para el tratamiento oportuno de posibles enfermmedades gastrointestinales.
 
