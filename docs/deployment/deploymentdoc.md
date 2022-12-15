@@ -35,7 +35,9 @@ Además , la clase *DataLoader* contiene las funciones de:
 •	**init**: Constructor de la clase *DataLoader*: Parámetro self: objeto de la clase *DataLoader*.
 
 •	**load_file**(orig, dest): Extractor de los archivos compresos en el repositorio de GoogleDrive. Parámetro *orig*: string que indica la ruta de origen. Parámetro *dest*: string que indica la ruta de destino.
+
 •	**preproceso**(ruta_dest): Preprocesamiento de las imágenes descomprimidas en la ruta destino retornando las salidas en arreglos de numpy de (224,224,3). Parámetro *ruta_dest*: string que indica la ruta de destino donde fueron descomprimidos los datos.
+
 •	**call**: Llamado de la clase DataLoader que retorna el conjunto de datos: train_gen, X_train_prep, X_val_prep, X_test_prep, Y_train,Y_test, Y_val en arreglos de Numpy de un tamaño de (224,224,3). Parámetro self: objeto de la clase *DataLoader*.
 
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------
