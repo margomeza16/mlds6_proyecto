@@ -104,8 +104,19 @@ No Aplica.
 
 * Any other documentation depending on the deployment kind.
 
-El despliegue del modelo se realizará mediante mlflow utilizando el siguiente comando:
+
+Para el despliegue y ejecución del modelo se utilizó la libreria MLFlow, mediante los siguientes comandos básicos:
+
+Inicialización del proyecto mediante la configuración del archivo MLproject
+
+Creación de experimientos mediante mlflow experiments
+
+Ejecución del proyecto mediante mlflow run
+
+Generación del dashboard mediante mlflow server
+
+Despliegue del modelo mediante mlflow models serve
 
 mlflow models serve -m ""runs:/c8df84ac830d492685122538a67aa5bc/modft" --env-manager 
 
-No Aplica. 
+
