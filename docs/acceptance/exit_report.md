@@ -9,6 +9,9 @@ Customer: <Enter Customer Name\>
 	Juan Sebastian Malagón
 
 Team Members: <Enter team member' names. Please also enter relevant parties names, such as team lead, Account team, Business stakeholders, etc.\>
+	
+	Alejandro Sandoval
+	Marco Julio Gómez Amado
 
 ##	Overview
 
