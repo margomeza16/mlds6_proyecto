@@ -142,5 +142,5 @@ mlflow models serve -m ""runs:/c8df84ac830d492685122538a67aa5bc/modft" --env-man
 
 En el archivo  <MLproject> se especifica el nombre del proyecto, parámetros del modelo y ejecución del entrenamiento, el cual se encuentra en el link que se referencia más adelante.
 
-**Lo anterior se puede revisar a profundidad en el enlace del código del paquete modft **https://github.com/margomeza16/mlds6_ft**. 
+**Lo anterior se puede revisar a profundidad en el enlace del código del paquete modft:** **https://github.com/margomeza16/mlds6_ft**. 
 
