@@ -15,7 +15,7 @@ Poetry: Para la instalación y manejo de dependencias.
 mlflow: Para la estructuración y despliegue del proyecto.
 
 
-**Modft** es una biblioteca para el lenguaje de programación Python que permite predecir la probabilidad de una patología gastrointestinal de un paciente dada una endoscopia mediante el uso de una red neuronal convolucional. En su versión 0.1.0.
+**modft** es una biblioteca para el lenguaje de programación Python que permite predecir la probabilidad de una patología gastrointestinal de un paciente dada una endoscopia mediante el uso de una red neuronal convolucional. En su versión 0.1.0.
 
 **modft** fue construida a partir de las siguientes librerías base: tensorflow, mlflow, numpy, matplotlib, os, zipfile, dataclasses, typing y argparse.  Esta librería es soportada por las versiones de Python mayores o iguales a 3.10 y menores que 3.11, requirió de la dependencia de desarrollo de neovim en su versión 0.3.1, además de las siguientes dependencias: 
 
@@ -84,16 +84,19 @@ Adicionalmente, **modft** cuenta con los siguientes scripts:
 
 •	**modft.test**: Carga del modelo, de los datos de prueba y predicción de la probabilidad de la patología. Se utiliza para recibir una imagen del usuario y realizar el diagnóstico de la patalogía.
 
-El script de train contiene las funciones de:
+**Scripts**
+
+**train**. El script de train contiene las funciones de:
 
 •	**make_parser**: Retorna argumentos de tipo ArgumentParser para los parámetros del entrenamiento del modelo de: dropout (float), learning_rate (float), epochs (int) y bath_size (int).
 
-•	**main**: Contiene los procedimientos de construcción, compilado, entrenamiento y visualización del rendimiento del modelo a partir de los objetos DataLoader, Compile_hparams, Train_hparams, ModelBuilder y Visualizer orquestados por mlflow.
+•	**main**: Contiene los procedimientos de construcción, compilado, entrenamiento y visualización del rendimiento del modelo a partir de los objetos DataLoader, Compile_hparams, Train_hparams, ModelBuilder y Visualizer orquestados por mlflow. Se utiliza mlflow para crear una nueva corrida de un experimento del  modelo, se compila, ejecuta, construye la historia de entrenamiento del modelo y se regitran los parámetro de compilación y entrenamiento así como las métricas obtenidas por el experimento ejecutado.
 
 
-El script de test contiene las funciones de:
 
-•	**main**: Contiene los procedimientos de cargue de los datos de prueba, del modelo entrenado y predicción de la probabilidad de la patología a partir del objeto DataLoader orquestado por mlflow.
+ **test**. El script de test contiene las funciones de:
+
+•	**main**: Carga imagen de prueba y realiza clasificación de la patología a partir del método predict del modelo cargado en mlflow. 
 
 
 * Dashboard documentation.
