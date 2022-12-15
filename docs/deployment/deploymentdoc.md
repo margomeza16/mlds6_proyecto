@@ -95,14 +95,27 @@ El script de test contiene las funciones de:
 
 •	**main**: Contiene los procedimientos de cargue de los datos de prueba, del modelo entrenado y predicción de la probabilidad de la patología a partir del objeto DataLoader orquestado por mlflow.
 
-## Lo anterior se puede revisar a profundidad en el enlace del código del paquete modft **https://github.com/margomeza16/mlds6_ft**. 
-
 
 * Dashboard documentation.
 
 No Aplica.
 
 * Any other documentation depending on the deployment kind.
+
+Para la estructuración, instalación y manejo de dependencias del proyecto se utilizó poetry, destacando la siguiente secuencia de comandos principales:
+
+
+poetry ini. Para la inicialización del proyecto. Inicializa archivo pyproject.toml, en el que se definen las dependencias del proyecto.
+
+poetry add. Para adicionar paquetes, los cuales son incluidos como dependencias de forma autmática en el archivo pyproject.toml.
+
+poetry update. Para actualizar el archivo poetry.lock con las ultimas versiones de dependencias instaladas.
+
+poetry build. Para construir archivo .whl con el que se publicará el proyecto.
+
+poetry install. Para resolver dependencias incluidas en achivo pyproject. toml e instalar el proyecto.
+
+El resultado de configuración de dependencias se encuentra en el archivo <pyproject.toml>, al que se accede desde el link que se referencia más adelante.
 
 
 Para el despliegue y ejecución del modelo se utilizó la libreria MLFlow, mediante los siguientes comandos básicos:
@@ -119,4 +132,8 @@ Despliegue del modelo mediante mlflow models serve
 
 mlflow models serve -m ""runs:/c8df84ac830d492685122538a67aa5bc/modft" --env-manager 
 
+En el archivo  <MLproject> se especifica el nombre del proyecto, parámetros del modelo y ejecución del entrenamiento, el cual se encuentra en el link que se referencia más adelante.
+
+  
+  ## Lo anterior se puede revisar a profundidad en el enlace del código del paquete modft **https://github.com/margomeza16/mlds6_ft**. 
 
