@@ -96,7 +96,12 @@ Adicionalmente, **modft** cuenta con los siguientes scripts:
 
  **test**. El script de test contiene las funciones de:
 
-•	**main**: Carga imagen de prueba y realiza clasificación de la patología a partir del método predict del modelo cargado en mlflow. 
+•	**main**: Función para realizar evaluación del modelo entrenado y cargado en mlflow mediante la clasificación de una imagen del conjunto de test.
+
+   Return
+   ------
+   y_pred: probabilidad de pertenencia a cada clase asignada por el modelo a la imagen cargada
+
 
 
 * Dashboard documentation.
