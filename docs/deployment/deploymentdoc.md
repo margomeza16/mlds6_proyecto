@@ -17,7 +17,7 @@ mlflow: Para la estructuración y despliegue del proyecto.
 
 **Modft** es una biblioteca para el lenguaje de programación Python que permite predecir la probabilidad de una patología gastrointestinal de un paciente dada una endoscopia mediante el uso de una red neuronal convolucional. En su versión 0.1.0.
 
-**modelft** fue construida a partir de las siguientes librerías base: tensorflow, mlflow, numpy, matplotlib, os, zipfile, dataclasses, typing y argparse.  Esta librería es soportada por las versiones de Python mayores o iguales a 3.10 y menores que 3.11, requirió de la dependencia de desarrollo de neovim en su versión 0.3.1, además de las siguientes dependencias: 
+**modft** fue construida a partir de las siguientes librerías base: tensorflow, mlflow, numpy, matplotlib, os, zipfile, dataclasses, typing y argparse.  Esta librería es soportada por las versiones de Python mayores o iguales a 3.10 y menores que 3.11, requirió de la dependencia de desarrollo de neovim en su versión 0.3.1, además de las siguientes dependencias: 
 
 *   **docker-compose** en su versión 1.29.2.
 
