@@ -8,23 +8,32 @@ No Aplica.
 
 * Package documentation (e.g. sphinx).
 
-**Modft** es una biblioteca para el lenguaje de programación Python que permite predecir la probabilidad de una patología gastrointestinal de un paciente dada una endoscopia mediante el uso de una red neuronal convolucional. En su versión 0.1.0. **modelft** fue construida a partir de las siguientes librerías base: tensorflow, mlflow, numpy, matplotlib, os, zipfile, dataclasses, typing y argparse.  Esta librería es soportada por las versiones de Python mayores o iguales a 3.10 y menores que 3.11, requirió de la dependencia de desarrollo de neovim en su versión 0.3.1, además de las siguientes dependencias: 
+**Modft** es una biblioteca para el lenguaje de programación Python que permite predecir la probabilidad de una patología gastrointestinal de un paciente dada una endoscopia mediante el uso de una red neuronal convolucional. En su versión 0.1.0.
+
+**modelft** fue construida a partir de las siguientes librerías base: tensorflow, mlflow, numpy, matplotlib, os, zipfile, dataclasses, typing y argparse.  Esta librería es soportada por las versiones de Python mayores o iguales a 3.10 y menores que 3.11, requirió de la dependencia de desarrollo de neovim en su versión 0.3.1, además de las siguientes dependencias: 
 
 *   **docker-compose** en su versión 1.29.2.
+
 *   **mlflow** en su versión 2.0.1.
+
 *   **tensorflow** en su versión 2.11.0.
 
 modft cuenta con los siguientes módulos que se describen a continuación:
 
 •	**modft.data**: Carga y preprocesamiento de los datos de entrada del modelo.
+
 •	**modft.models**: Construcción y compilado del modelo de red neuronal convolucional. 
+
 •	**modft.viz**: Visualización del rendimiento del modelo.
 
-En el módulo *data* se encuentra contenida la siguiente clase DataLoader encargada de realizar el cargue y preprocesamiento de los datos correspondientes a imágenes RGB provenientes de un repositorio en GoogleDrive retornando el conjunto de datos: *train_gen*, *X_train_prep*, *X_val_prep*, *X_test_prep*, *Y_train*, *Y_test*, *Y_val* en arreglos de Numpy de un tamaño de (224,224,3). 
+En el módulo *data* se encuentra contenida la siguiente clase DataLoader encargada de realizar el cargue y preprocesamiento de los datos correspondientes a imágenes RGB provenientes de un repositorio en GoogleDrive retornando el conjunto de datos:
+
+*train_gen*, *X_train_prep*, *X_val_prep*, *X_test_prep*, *Y_train*, *Y_test*, *Y_val* en arreglos de Numpy de un tamaño de (224,224,3). 
 
 Además , la clase *DataLoader* contiene las funciones de:
 
 •	**init**: Constructor de la clase *DataLoader*: Parámetro self: objeto de la clase *DataLoader*.
+
 •	**load_file**(orig, dest): Extractor de los archivos compresos en el repositorio de GoogleDrive. Parámetro *orig*: string que indica la ruta de origen. Parámetro *dest*: string que indica la ruta de destino.
 •	**preproceso**(ruta_dest): Preprocesamiento de las imágenes descomprimidas en la ruta destino retornando las salidas en arreglos de numpy de (224,224,3). Parámetro *ruta_dest*: string que indica la ruta de destino donde fueron descomprimidos los datos.
 •	**call**: Llamado de la clase DataLoader que retorna el conjunto de datos: train_gen, X_train_prep, X_val_prep, X_test_prep, Y_train,Y_test, Y_val en arreglos de Numpy de un tamaño de (224,224,3). Parámetro self: objeto de la clase *DataLoader*.
@@ -36,12 +45,17 @@ En el módulo models se encuentran contenidas las clases de *MLP* y *ModelBuilde
 Además , la clase **MLP** contiene las funciones de:
 
 •	**init**: Constructor de la clase MLP: Parámetro self: objeto de la clase *MLP*, *dropout*: float indica el valor de dropout del modelo, *args y **kwargs objetos derivados.
+
 •	**call**: Llamado de la clase *MLP*. Parámetro self: objeto de la clase *MLP*, *x*: tensor entradas del modelo.
 
 Por otra parte, la clase *ModelBuilder* contiene las funciones de: 
+
 •	**set_compile_hparams**: Configurador de los parámetros de compilado del modelo: Parámetro *self*: objeto de la clase ModelBuilder. *Compile_hparams*: objeto de la clase de datos de *Compile_hparams*. Retorna un objeto de la clase *ModelBuilder*.
+
 •	**set_train_hparams**: Configurador de los parámetros de entrenamiento del modelo: Parámetro *self*: objeto de la clase ModelBuilder. *Train_hparams*: objeto de la clase de datos de *Train_hparams*. Retorna un objeto de la clase *ModelBuilder*.
+
 •	**build**: Constructor y compilador del modelo: Parámetro *self*: objeto de la clase *ModelBuilder*. Retorna un objeto de la clase *ModelBuilder*.
+
 •	**train**: Entrenador del modelo: Parámetro *self*: objeto de la clase *ModelBuilder*. *Dl*: objeto de la clase *DataLoader*. Retorna un objeto de la clase *ModelBuilder*.
 
 
@@ -52,20 +66,27 @@ En el módulo **viz** se encuentra contenida la clase de Visualizer encargada de
 Además , la clase *MLP* contiene las funciones de:
 
 •	**init**: Constructor de la clase *Visualizer*: Parámetro *self*: objeto de la clase *Visualizer*, *history*: Dict contiene las métricas de perdida y accuracy del modelo, *path*: string contiene la ruta de visualización de la imagen.
+
 •	**Call**: Llamado de la clase *Visualizer*. Parámetro *self*: objeto de la clase *Visualizer*, proporciona el gráfico de las pérdidas y exactitud del modelo.
 
 Adicionalmente, **modft** cuenta con los siguientes scripts: 
 
 •	**modft.train**: Construcción, compilación, entrenamiento y visualización del rendimiento del modelo mediante el uso del API de MLFlow.
-•	**modft.test**: Carga del modelo, de los datos de prueba y predicción de la probabilidad de la patología.
+
+•	**modft.test**: Carga del modelo, de los datos de prueba y predicción de la probabilidad de la patología. Se utiliza para recibir una imagen del usuario y realizar el diagnóstico de la patalogía.
+
 El script de train contiene las funciones de:
+
 •	**make_parser**: Retorna argumentos de tipo ArgumentParser para los parámetros del entrenamiento del modelo de: dropout (float), learning_rate (float), epochs (int) y bath_size (int).
+
 •	**main**: Contiene los procedimientos de construcción, compilado, entrenamiento y visualización del rendimiento del modelo a partir de los objetos DataLoader, Compile_hparams, Train_hparams, ModelBuilder y Visualizer orquestados por mlflow.
 
+
 El script de test contiene las funciones de:
+
 •	**main**: Contiene los procedimientos de cargue de los datos de prueba, del modelo entrenado y predicción de la probabilidad de la patología a partir del objeto DataLoader orquestado por mlflow.
 
-Lo anterior se puede revisar a profundidad en el enlace del código del paquete modft **https://github.com/margomeza16/mlds6_ft**. 
+## Lo anterior se puede revisar a profundidad en el enlace del código del paquete modft **https://github.com/margomeza16/mlds6_ft**. 
 
 
 * Dashboard documentation.
@@ -73,5 +94,9 @@ Lo anterior se puede revisar a profundidad en el enlace del código del paquete 
 No Aplica.
 
 * Any other documentation depending on the deployment kind.
+
+El despliegue del modelo se realizará mediante mlflow utilizando el siguiente comando:
+
+mlflow models serve -m ""runs:/c8df84ac830d492685122538a67aa5bc/modft" --env-manager 
 
 No Aplica. 
